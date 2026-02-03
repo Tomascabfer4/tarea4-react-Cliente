@@ -1,35 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Actividad1 from "./components/Actividad1";
+import Actividad2 from "./components/Actividad2";
+import Actividad3 from "./components/Actividad3";
+import Actividad4 from "./components/Actividad4";
+import Actividad5 from "./components/Actividad5";
+import Actividad6 from "./components/Actividad6";
+import Actividad7 from "./components/Actividad7";
+import Actividad8 from "./components/Actividad8";
+import Actividad9 from "./components/Actividad9";
+import Actividad10 from "./components/Actividad10";
+import Actividad11 from "./components/Actividad11";
+import Actividad12 from "./components/Actividad12";
+import Actividad13 from "./components/Actividad13";
+import Actividad14 from "./components/Actividad14";
+import Actividad15 from "./components/Actividad15";
+import Actividad16 from "./components/Actividad16";
+import Actividad17 from "./components/Actividad17";
 
 function App() {
-  const [count, setCount] = useState(0)
+  //Estado para el componente 14
+  const [cambiarTema, setCambiarTema] = useState("tema-oscuro");
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className={cambiarTema}>
+      <Actividad1 />
+      <Actividad2 />
+      <Actividad3 />
+      <Actividad4 />
+      <Actividad5 />
+      <Actividad6 />
+      <Actividad7 />
+      <Actividad8 />
+      <Actividad9 />
+      <Actividad10 />
+      <Actividad11 />
+      <Actividad12 />
+      <Actividad13 />
+      <Actividad14 //Aqui le enviamos la funcion al hijo para que la ejecute.
+        botonClick={() =>
+          setCambiarTema(
+            cambiarTema === "tema-oscuro" ? "tema-claro" : "tema-oscuro",
+          )
+        }
+      />
+      <Actividad15 />
+      <Actividad16 />
+      <Actividad17 />
+    </div>
+  );
 }
 
-export default App
+export default App;
