@@ -17,6 +17,14 @@ import Actividad14 from "./components/Actividad14";
 import Actividad15 from "./components/Actividad15";
 import Actividad16 from "./components/Actividad16";
 import Actividad17 from "./components/Actividad17";
+import Actividad18 from "./components/Actividad18";
+import Actividad19 from "./components/Actividad19";
+import Actividad20 from "./components/Actividad20";
+import Actividad21 from "./components/Actividad21";
+import Actividad22 from "./components/Actividad22";
+import Actividad23 from "./components/Actividad23";
+import Actividad24 from "./components/Actividad24";
+import Actividad25 from "./components/Actividad25";
 
 function App() {
   //Estado para el componente 14
@@ -47,6 +55,14 @@ function App() {
       <Actividad15 />
       <Actividad16 />
       <Actividad17 />
+      <Actividad18 />
+      <Actividad19 />
+      <Actividad20 />
+      <Actividad21 />
+      <Actividad22 />
+      <Actividad23 />
+      <Actividad24 />
+      <Actividad25 />
     </div>
   );
 }
